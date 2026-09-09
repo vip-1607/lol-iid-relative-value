@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lol-iid-relative-value"
+version = "0.1.0"
+description = "Conditional i.i.d. relative-value analysis for LoL Bo3 and Bo5 markets"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+iid-rv = "iid_relative_value.cli:main"
+
+[tool.setuptools]
+packages = ["iid_relative_value"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"

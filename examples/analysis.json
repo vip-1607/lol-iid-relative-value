@@ -1,0 +1,13 @@
+{
+  "best_of": 3,
+  "score": {"a": 0, "b": 0},
+  "bankroll": 1000,
+  "fractional_kelly": 0.25,
+  "edge_buffer": 0.005,
+  "anchor": {"market": {"kind": "match"}, "bid": 0.64, "ask": 0.66},
+  "quotes": [
+    {"name": "A match YES", "market": {"kind": "match"}, "side": "YES", "bid": 0.64, "ask": 0.66, "depth": 100},
+    {"name": "A -1.5 YES", "market": {"kind": "handicap", "line": -1.5}, "side": "YES", "bid": 0.34, "ask": 0.36, "depth": 100},
+    {"name": "3 maps YES", "market": {"kind": "total_exact", "line": 3}, "side": "YES", "bid": 0.43, "ask": 0.45, "depth": 100}
+  ]
+}
